@@ -1,3 +1,4 @@
+
 const quoteText = document.querySelector(".quote"),
 authorName = document.querySelector(".author .name"),
 quoteBtn = document.querySelector("button");
@@ -40,4 +41,5 @@ twitterbtn.addEventListener("click", ()=>{
 
 
 quoteBtn.addEventListener("click",randomQuote);
+
 

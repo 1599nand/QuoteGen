@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js" defer></script>
+    <script src="script1.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body onload="checkAuth()">
+    <div class="container">
+        <header>
+            Quote Of the Day
+            <div class="toggle-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle"></label>
+            </div>
+        </header>
+        <div class="quote-card">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote">Loading...</p>
+            <i class="fas fa-quote-right"></i>
+            <div class="author">- <span class="name">Unknown</span></div>
+        </div>
+        <div class="buttons">
+            <button class="new-quote">New Quote</button>
+            <div class="actions">
+                <i class="fas fa-volume-up sound"></i>
+                <i class="fas fa-copy copy"></i>
+                <i class="fab fa-twitter twitter"></i>
+            </div>
+        </div>
+        <button onclick="logout()" class="logout">Logout</button>
+    </div>
+</body>
+</html>
